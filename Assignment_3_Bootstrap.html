@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find joker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- CSS Internal Styling -->
+    <style>
+        .card-container{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content: center;
+            margin-bottom: 150px;
+        }
+        .card{
+            width: 200px;
+            height: 300px;
+            perspective: 1000px;
+            margin: 20px;  
+        }
+        .card-inner{
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s;
+            transform-style: preserve-3d;
+        }
+        .card:hover .card-inner{
+            transform: rotateY(180deg);
+        }
+        .card-front, .card-back{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+        }
+        .card-back{
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- Container 1 -->
+    <div class = "container">
+        <div class = "card-container">
+            <!-- Card 1 -->
+            <div class = "card">
+                <div class = "card-inner">
+                    <div class="card-front">
+                        <img src = 'card_bg.jpg' class = 'card-img-top' alt = 'Front-Image'>
+                        <div class = 'card-body'>
+                            <h5 class="card-title"> Is this card a joker?</h5>
+                            <p class = "card-text"> Find the joker</p>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <img src = 'Q_dia.png' class = 'card-img-top' alt = 'Back-Image'>
+                        <div class = 'card-body'>
+                            <h5 class="card-title"> Queen of diamonds</h5>
+                            <p class = "card-text"> Hard luck! Try another card</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class = "card">
+                <div class = "card-inner">
+                    <div class="card-front">
+                        <img src = 'card_bg.jpg' class = 'card-img-top' alt = 'Front-Image'>
+                        <div class = 'card-body'>
+                            <h5 class="card-title"> Is this card a joker?</h5>
+                            <p class = "card-text"> Find the joker</p>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <img src = '2_club.png' class = 'card-img-top' alt = 'Back-Image'>
+                        <div class = 'card-body'>
+                            <h5 class="card-title"> Deuce of clubs</h5>
+                            <p class = "card-text"> Hard luck! Try another card</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class = "card">
+                <div class = "card-inner">
+                    <div class="card-front">
+                        <img src = 'card_bg.jpg' class = 'card-img-top' alt = 'Front-Image'>
+                        <div class = 'card-body'>
+                            <h5 class="card-title"> Is this card a joker?</h5>
+                            <p class = "card-text"> Find the joker</p>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <img src = 'K_hearts.png' class = 'card-img-top' alt = 'Back-Image'>
+                        <div class = 'card-body'>
+                            <h5 class="card-title"> King of Hearts</h5>
+                            <p class = "card-text"> Hard luck! Try another card</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container 2 -->
+    <div class = "container">
+        <div class = "card-container">
+            <!-- Card 4-->
+            <div class = "card">
+                <div class = "card-inner">
+                    <div class="card-front">
+                        <img src = 'card_bg.jpg' class = 'card-img-top' alt = 'Front-Image'>
+                        <div class = 'card-body'>
+                            <h5 class="card-title"> Is this card a joker?</h5>
+                            <p class = "card-text"> Find the joker</p>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <img src = '4_spade.png' class = 'card-img-top' alt = 'Back-Image'>
+                        <div class = 'card-body'>
+                            <h5 class="card-title"> Cater of Spades</h5>
+                            <p class = "card-text"> Hard luck! Try another card</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class = "card">
+                <div class = "card-inner">
+                    <div class="card-front">
+                        <img src = 'card_bg.jpg' class = 'card-img-top' alt = 'Front-Image'>
+                        <div class = 'card-body'>
+                            <h5 class="card-title"> Is this card a joker?</h5>
+                            <p class = "card-text"> Find the joker</p>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <img src = 'ace_spades.png' class = 'card-img-top' alt = 'Back-Image'>
+                        <div class = 'card-body'>
+                            <h5 class="card-title"> Ace of Spades</h5>
+                            <p class = "card-text"> Hard luck! Try another card</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class = "card">
+                <div class = "card-inner">
+                    <div class="card-front">
+                        <img src = 'card_bg.jpg' class = 'card-img-top' alt = 'Front-Image'>
+                        <div class = 'card-body'>
+                            <h5 class="card-title"> Is this card a joker?</h5>
+                            <p class = "card-text"> Find the joker</p>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <img src = 'joker.png' class = 'card-img-top' alt = 'Back-Image'>
+                        <div class = 'card-body'>
+                            <h5 class="card-title"> Joker of SIT?</h5>
+                            <p class = "card-text"> Finally! You found it</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

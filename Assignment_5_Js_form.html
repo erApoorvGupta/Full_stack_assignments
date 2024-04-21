@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        .error {
+            color: red;
+            font-size: em;
+        }
+        h2{
+            font-size:50px;
+        }
+        label{
+            font-style: oblique;
+            font-weight: bold;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        input{
+            margin-bottom: 20px;
+        }
+        span{
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- Form content interface -->
+    <form id="registrationForm">
+        <h2>Registration Form</h2>
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName">
+        <span id="firstNameError" class="error"></span><br>
+
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName">
+        <span id="lastNameError" class="error"></span><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email">
+        <span id="emailError" class="error"></span><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password">
+        <span id="passwordError" class="error"></span><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+    <script>
+        // variables to store values
+        const form = document.getElementById('registrationForm');
+        const firstName = document.getElementById('firstName');
+        const lastName = document.getElementById('lastName');
+        const email = document.getElementById('email');
+        const password = document.getElementById('password');
+
+        function validateForm(event) {
+            let hasError = false;
+
+            // if name empty then error
+            if (firstName.value === '') {
+                setError(firstName, 'First name is required');
+                hasError = true;
+            } else {
+                // if not empty clear error message
+                clearError(firstName);
+            }
+            
+            // if lastname empty then error
+            if (lastName.value === '') {
+                setError(lastName, 'Last name is required');
+                hasError = true;
+            } else {
+                // lastname not empty no error
+                clearError(lastName);
+            }
+
+            // email empty error
+            if (email.value === '') {
+                setError(email, 'Email is required');
+                hasError = true;
+            } else if (!isValidEmail(email.value)) {
+                // invalid format email error
+                setError(email, 'Invalid email format');
+                hasError = true;
+            } else {
+                // remove error if all according to format
+                clearError(email);
+            }
+
+            // Password empty error
+            if (password.value === '') {
+                setError(password, 'Password is required');
+                hasError = true;
+            } else if (password.value.length < 8) {
+                // Password short length error 
+                setError(password, 'Password must be at least 8 characters long');
+                hasError = true;
+            } else {
+                // clear error if all good
+                clearError(password);
+            }
+
+            if (hasError) {
+                event.preventDefault(); // Prevent form submission if there are errors
+            }
+        }
+
+        //making life easy for repeted actions using 
+        // functions for setting, clearing and formating functions
+
+        function setError(input, message) {
+            const errorSpan = input.nextElementSibling;
+            errorSpan.textContent = message;
+            input.classList.add('error-input');
+        }
+
+        function clearError(input) {
+            const errorSpan = input.nextElementSibling;
+            errorSpan.textContent = '';
+            input.classList.remove('error-input');
+        }
+
+        function isValidEmail(email) {
+            // Simple email validation regex
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        form.addEventListener('submit', validateForm);
+    </script>
+</body>
+
+</html>

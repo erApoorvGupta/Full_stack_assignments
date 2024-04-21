@@ -1,0 +1,162 @@
+[ 
+ { 
+ "Id": 1, 
+ "Name": "Charlie Moore", 
+ "Age": 44, 
+ "Gender": "Male", 
+ "Project_id": 4, 
+ "Hrs_worked": 12 
+ }, 
+ { 
+ "Id": 2, 
+ "Name": "Frank Smith", 
+ "Age": 36, 
+ "Gender": "Female", 
+ "Project_id": 1, 
+ "Hrs_worked": 12 
+ }, 
+ { 
+ "Id": 3, 
+ "Name": "Hannah Brown", 
+ "Age": 33, 
+ "Gender": "Female", 
+ "Project_id": 2, 
+ "Hrs_worked": 36 
+ }, 
+ { 
+ "Id": 4, 
+ "Name": "Hannah Davis",
+ "Age": 31, 
+ "Gender": "Female", 
+ "Project_id": 2, 
+ "Hrs_worked": 22 
+ }, 
+ { 
+ "Id": 5, 
+ "Name": "Bob Davis", 
+ "Age": 41, 
+ "Gender": "Female", 
+ "Project_id": 4, 
+ "Hrs_worked": 16 
+ }, 
+ { 
+ "Id": 6, 
+ "Name": "Hannah Davis", 
+ "Age": 57, 
+ "Gender": "Male", 
+ "Project_id": 2, 
+ "Hrs_worked": 28 
+ }, 
+ { 
+ "Id": 7, 
+ "Name": "Frank Brown", 
+ "Age": 49, 
+ "Gender": "Male", 
+ "Project_id": 4, 
+ "Hrs_worked": 30 
+ }, 
+ { 
+ "Id": 8, 
+ "Name": "David Williams", 
+ "Age": 60, 
+ "Gender": "Male", 
+ "Project_id": 2, 
+ "Hrs_worked": 34 
+ }, 
+ { 
+ "Id": 9, 
+ "Name": "Charlie Johnson", 
+ "Age": 49, 
+ "Gender": "Male", 
+ "Project_id": 3, 
+ "Hrs_worked": 32 
+ }, 
+ { 
+ "Id": 10, 
+ "Name": "Charlie Johnson", 
+ "Age": 60, 
+ "Gender": "Male", 
+ "Project_id": 4, 
+ "Hrs_worked": 36
+}, 
+ { 
+ "Id": 11, 
+ "Name": "Grace Wilson", 
+ "Age": 42, 
+ "Gender": "Female", 
+ "Project_id": 2, 
+ "Hrs_worked": 15 
+ }, 
+ { 
+ "Id": 12, 
+ "Name": "Isaac Smith", 
+ "Age": 32, 
+ "Gender": "Male", 
+ "Project_id": 2, 
+ "Hrs_worked": 23 
+ }, 
+ { 
+ "Id": 13, 
+ "Name": "Emma Jones", 
+ "Age": 52, 
+ "Gender": "Male", 
+ "Project_id": 1, 
+ "Hrs_worked": 33 
+ }, 
+ { 
+ "Id": 14, 
+ "Name": "Isaac Wilson", 
+ "Age": 21, 
+ "Gender": "Female", 
+ "Project_id": 3, 
+ "Hrs_worked": 32 
+ }, 
+ { 
+ "Id": 15, 
+ "Name": "Hannah Davis", 
+ "Age": 43, 
+ "Gender": "Male", 
+ "Project_id": 4, 
+ "Hrs_worked": 32 
+ }, 
+ { 
+ "Id": 16, 
+ "Name": "Alice Moore", 
+ "Age": 29, 
+ "Gender": "Male", 
+ "Project_id": 1, 
+ "Hrs_worked": 39 
+ }, 
+ { 
+ "Id": 17, 
+ "Name": "David Miller", 
+ "Age": 25, 
+ "Gender": "Female", 
+ "Project_id": 4, 
+ "Hrs_worked": 32 
+ }, 
+ { 
+ "Id": 18, 
+ "Name": "Isaac Wilson", 
+ "Age": 32, 
+ "Gender": "Female", 
+ "Project_id": 2, 
+ "Hrs_worked": 31 
+ }, 
+ { 
+ "Id": 19, 
+ "Name": "Charlie Williams", 
+ "Age": 59, 
+ "Gender": "Female", 
+ "Project_id": 1, 
+ "Hrs_worked": 31 
+ }, 
+ { 
+ "Id": 20, 
+ "Name": "Frank Miller", 
+ "Age": 55, 
+ "Gender": "Female", 
+ "Project_id": 4, 
+ "Hrs_worked": 24 
+ } 
+] 

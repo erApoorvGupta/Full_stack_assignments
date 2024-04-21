@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration response form</title>
+    <style>
+        /* Anything that has no specific CSS defination will use body tag attributes */
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height:100vh;
+        }
+        /* CSS for form attribute */
+        form{
+            max-width:600px;
+            width:100%;
+            background-color: #fff;
+            padding:20px;
+            box-shadow:0 0 10px rgba(0,0,0,0.8);
+            border-radius:8px;
+        }
+        /* CSS for form label */
+        label{
+            display:block;
+            margin-top:16px;
+            font-weight: bold;
+        }
+        /* CSS for form input and select, same for both */
+        input, select{
+            width:100%;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 15px;
+            border :1px solid #ccc;
+            box-sizing:border-box;
+        }
+        /* CSS for any tag belonging to group class */
+        .group{
+            display: flex;
+            gap:10px;
+            font-weight: bold;
+            width: 40%;
+        }
+        /* CSS for any tag belonging to group2 class */
+        .group2{
+            display: flex;
+            gap:10px;
+            font-weight: normal;
+            width: 40%;
+        }
+        /* CSS for button tag*/
+        button{
+            width: 100%;
+            padding: 10px;
+            background-color: greenyellow;
+            font-weight: bold;
+            margin-top: 15px;
+            border-color: white;
+        }
+        /* CSS for button tag but conditon of cusor on the created object, basically hover*/
+        button[type='submit']:hover{
+            background-color: green;
+        }
+
+    </style>
+
+</head>
+<body>
+    <form>
+        <!-- First Name -->
+        <label> First Name </label>
+        <input type = "text" name = "T1">
+        <!-- Last Name -->
+        <label> Last Name </label>
+        <input type = "text" name = "T2">
+        <!-- Email -->
+        <label> Email Adress </label>
+        <input type = "email" name = "T3">
+        <!-- Password -->
+        <label> Password </label>
+        <input type = "password" name = "P1">
+        <!-- Confirm Password -->
+        <label> Confirm password </label>
+        <input type = "password" name = "CP1">
+        <!-- DOB -->
+        <label> Date of birth </label>
+        <input type = "date" name = "dob">
+        <!-- Gender -->
+        <label> Gender </label>
+        <div class = "group">
+            <input type = "radio" name = "gender" value = 'Male'>
+            <input type = "radio" name = "gender" value = 'Female'>
+            <input type = "radio" name = "gender" value = 'Others'>
+        </div>
+
+        <div class = "group2">
+            <label class = "group2"> Male </label>
+            <label class = "group2"> Female </label>
+            <label class = "group2"> Others </label>
+        </div>
+
+        <!-- Country -->
+        <label> Country</label>
+        <select id="country" name="country">
+            <!-- <option value="">Select your country</option> -->
+            <option value="">India</option>
+            <option value="">UK</option>
+            <option value="">USA</option>
+            <option value="">Japan</option>
+            </select>
+        <label for="profilePicture">Profile Picture:</label>
+        <input type="file" id="profilePicture" name="PP">
+        
+        <button type="submit">Register</button>
+
+    </form>
+    
+</body>
+</html>
